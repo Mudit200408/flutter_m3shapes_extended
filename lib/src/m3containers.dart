@@ -74,14 +74,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.circle,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.circle,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a square shape.
   factory M3Container.square({
@@ -90,14 +91,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.square,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.square,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a slanted shape.
   factory M3Container.slanted({
@@ -106,14 +108,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.slanted,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.slanted,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with an arch shape.
   factory M3Container.arch({
@@ -122,14 +125,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.arch,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.arch,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a semicircle shape.
   factory M3Container.semicircle({
@@ -138,14 +142,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.semicircle,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.semicircle,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with an oval shape.
   factory M3Container.oval({
@@ -154,14 +159,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.oval,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.oval,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a pill shape.
   factory M3Container.pill({
@@ -170,14 +176,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.pill,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.pill,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a triangle shape.
   factory M3Container.triangle({
@@ -186,14 +193,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.triangle,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.triangle,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with an arrow shape.
   factory M3Container.arrow({
@@ -202,14 +210,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.arrow,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.arrow,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a fan shape.
   factory M3Container.fan({
@@ -218,14 +227,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.fan,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.fan,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a diamond shape.
   factory M3Container.diamond({
@@ -234,14 +244,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.diamond,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.diamond,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a pentagon shape.
   factory M3Container.pentagon({
@@ -250,14 +261,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.pentagon,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.pentagon,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a gem shape.
   factory M3Container.gem({
@@ -266,14 +278,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.gem,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.gem,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a very_sunny shape.
   factory M3Container.verySunny({
@@ -282,14 +295,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.very_sunny,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.very_sunny,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a sunny shape.
   factory M3Container.sunny({
@@ -298,84 +312,134 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.sunny,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.sunny,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a 4-sided cookie shape.
   factory M3Container.c4SidedCookie({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.c4_sided_cookie,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.c4_sided_cookie,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a 6-sided cookie shape.
   factory M3Container.c6SidedCookie({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.c6_sided_cookie,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.c6_sided_cookie,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a 7-sided cookie shape.
   factory M3Container.c7SidedCookie({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.c7_sided_cookie,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.c7_sided_cookie,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a 9-sided cookie shape.
   factory M3Container.c9SidedCookie({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.c9_sided_cookie,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.c9_sided_cookie,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a 12-sided cookie shape.
   factory M3Container.c12SidedCookie({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.c12_sided_cookie,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.c12_sided_cookie,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a 4-leaf clover shape.
   factory M3Container.l4LeafClover({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.l4_leaf_clover,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.l4_leaf_clover,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with an 8-leaf clover shape.
   factory M3Container.l8LeafClover({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.l8_leaf_clover,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.l8_leaf_clover,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a burst shape.
   factory M3Container.burst({
@@ -384,14 +448,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.burst,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.burst,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a soft_burst shape.
   factory M3Container.softBurst({
@@ -400,14 +465,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.soft_burst,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.soft_burst,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a boom shape.
   factory M3Container.boom({
@@ -416,14 +482,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.boom,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.boom,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a soft_boom shape.
   factory M3Container.softBoom({
@@ -432,14 +499,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.soft_boom,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.soft_boom,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a flower shape.
   factory M3Container.flower({
@@ -448,14 +516,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.flower,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.flower,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a puffy shape.
   factory M3Container.puffy({
@@ -464,24 +533,32 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.puffy,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.puffy,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a puffy_diamond shape.
   factory M3Container.puffyDiamond({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.puffy_diamond,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.puffy_diamond,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a ghostish shape.
   factory M3Container.ghostish({
@@ -490,34 +567,49 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.ghostish,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.ghostish,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a pixel_circle shape.
   factory M3Container.pixelCircle({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.pixel_circle,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.pixel_circle,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a pixel_triangle shape.
   factory M3Container.pixelTriangle({
     required Widget child,
     Clip? clipBehavior,
-  }) => M3Container(
-    Shapes.pixel_triangle,
-    clipBehavior: clipBehavior,
-    child: child,
-  );
+    double? width,
+    double? height,
+    Color? color,
+  }) =>
+      M3Container(
+        Shapes.pixel_triangle,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a bun shape.
   factory M3Container.bun({
@@ -526,14 +618,15 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.bun,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.bun,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 
   /// Creates a container with a hearth shape.
   factory M3Container.hearth({
@@ -542,12 +635,13 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
-  }) => M3Container(
-    Shapes.hearth,
-    clipBehavior: clipBehavior,
-    height: height,
-    width: width,
-    color: color,
-    child: child,
-  );
+  }) =>
+      M3Container(
+        Shapes.hearth,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        child: child,
+      );
 }

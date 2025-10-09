@@ -10,30 +10,88 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
+# flutter_m3shapes
+A Flutter package for easily using the new **Material 3 Expressive Shapes**.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Bring a unique and modern feel to your app with a wide variety of predefined shapes. This library provides simple widgets that are easy to customize and integrate into any project.
 
-## Features
+### ✨ Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **Complete Collection**: Includes the full suite of Material 3 expressive shapes like Gem, Slanted, Flower, and more.
+- **Highly Customizable**: Easily adjust the size, color, and child of any shape.
+- **Easy to Use**: A simple, declarative API lets you add expressive shapes in seconds.
+- **Lightweight & Performant**: Built with performance in mind using Flutter's `CustomClipper`.
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
 
-## Usage
+## 🚨 Usage notes
+### <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" height="14"/> Flutter channel
+`flutter_m3shapes` is developed against Flutter's `stable` channel. To ensure a smooth development experience with `flutter_m3shapes`, you should build your application on Flutter's `stable` channel.
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" height="14"/> Platform Compatibility
+
+`flutter_m3shapes` is not platform dependent and should be compatible with all platform
+
+## 🚨 Example
+
+You can build and run the example app, but for be clear you can use all the shape using the `M3Container` constructors like this
 
 ```dart
-const like = 'sample';
+M3Container.slanted(
+    color: Colors.green,
+    width: size,
+    height: size,
+    child: const Center(child: Text("Slanted"))
+)
 ```
 
-## Additional information
+Or using the general constructor
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+M3Container(
+    <your selected shape>,
+    clipBehavior: clipBehavior,
+    height: height,
+    width: width,
+    color: color,
+    child: child,
+);
+```
+
+You can use all the Shapes in this enum:
+
+* circle
+* square
+* slanted
+* arch
+* semicircle
+* oval
+* pill
+* triangle
+* arrow
+* fan
+* diamond
+* pentagon
+* gem
+* very_sunny
+* sunny
+* c4_sided_cookie
+* c6_sided_cookie
+* c7_sided_cookie
+* c9_sided_cookie
+* c12_sided_cookie
+* l4_leaf_clover
+* l8_leaf_clover
+* burst
+* soft_burst
+* boom
+* soft_boom
+* flower
+* puffy
+* puffy_diamond
+* ghostish
+* pixel_circle
+* pixel_triangle
+* bun
+* hearth
+
