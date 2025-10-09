@@ -1,4 +1,7 @@
 # flutter_m3shapes
+
+[![pub package](https://img.shields.io/pub/v/flutter_m3shapes.svg)](https://pub.dev/packages/flutter_m3shapes)
+
 A Flutter package for easily using the new **Material 3 Expressive Shapes**.
 
 Bring a unique and modern feel to your app with a wide variety of predefined shapes. This library provides simple widgets that are easy to customize and integrate into any project.
