@@ -38,6 +38,15 @@ class MainApp extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10),
+                  child: M3Container.square(
+                    color: Colors.red,
+                    width: size,
+                    height: size,
+                    child: const Center(child: Text("Square")),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10),
                   child: M3Container.slanted(
                     color: Colors.green,
                     width: size,

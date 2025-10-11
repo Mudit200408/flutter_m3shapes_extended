@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_m3shapes/src/enums/shapes.dart';
 import 'package:path_drawing/path_drawing.dart';
+import 'package:vector_math/vector_math_64.dart';
 
 /// Parse an svg path string ina Path object for render
 /// converts the 'M', 'L', 'C', etc. commands
@@ -49,11 +50,11 @@ class M3Clipper extends CustomClipper<Path> {
     final Matrix4 matrix4 = Matrix4.identity();
 
     // Apply scaling to the matrix.
-    matrix4.scale(scaleX, scaleY);
+    matrix4.scaleByVector3(Vector3(scaleX, scaleY, 0));
 
     // Apply translation to the matrix. This moves the path's top-left
     // corner to the origin (0,0) before scaling, ensuring it aligns correctly.
-    matrix4.translate(-bounds.left, -bounds.top);
+    matrix4.translateByVector3(Vector3(-bounds.left, -bounds.top, 0));
 
     // 5. Apply the transformation to the path.
     // The `transform` method creates a new path with the matrix applied.
