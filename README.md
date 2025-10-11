@@ -13,6 +13,11 @@ Bring a unique and modern feel to your app with a wide variety of predefined sha
 - **Easy to Use**: A simple, declarative API lets you add expressive shapes in seconds.
 - **Lightweight & Performant**: Built with performance in mind using Flutter's `CustomClipper`.
 
+**You can use the shape as normal shape**
+
+
+**Or you can use the shapes decorated as an image**
+
 
 
 ## 🚨 Usage notes

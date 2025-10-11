@@ -13,10 +13,90 @@ class MainApp extends StatelessWidget {
     double size = 120;
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.white,
         body: Center(
           child: SingleChildScrollView(
             child: Column(
               children: [
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: M3Container.c9SidedCookie(
+                        width: 200,
+                        height: 200,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage("assets/raccoon.png"),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: M3Container.pixelTriangle(
+                        width: 200,
+                        height: 200,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage("assets/raccoon.png"),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: M3Container.pill(
+                        width: 200,
+                        height: 200,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage("assets/raccoon.png"),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: M3Container.bun(
+                        width: 200,
+                        height: 200,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage("assets/raccoon.png"),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: M3Container.ghostish(
+                        width: 200,
+                        height: 200,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage("assets/raccoon.png"),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: M3Container.circle(
