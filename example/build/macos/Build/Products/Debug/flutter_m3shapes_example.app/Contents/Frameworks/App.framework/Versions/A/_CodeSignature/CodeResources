@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.bin</key>
 		<data>
-		21tVqbIV90TbglF4ZJhNBz8uj4w=
+		skzr1eZR7ve+l4ZexYUMfbdo9Jo=
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<data>
-		vyGp6PvFo4RvsFtPoIWeCReyIC8=
+		0Na3qaL4hk8T4f3kETvmjg5KrbA=
 		</data>
 		<key>Resources/flutter_assets/FontManifest.json</key>
 		<data>
@@ -28,6 +28,10 @@
 		<data>
 		re4p7E8rPLLsN+wzaPN/+AVpXTY=
 		</data>
+		<key>Resources/flutter_assets/assets/raccoon.png</key>
+		<data>
+		7Amu5lNwFV7VcSpoTMHJLzwvn0U=
+		</data>
 		<key>Resources/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -38,7 +42,7 @@
 		</data>
 		<key>Resources/flutter_assets/kernel_blob.bin</key>
 		<data>
-		dIhdBm3bCt4TdyauKp3G5k6qxGM=
+		aOeIt3vsbmKTAaUyKrzTNApoMIs=
 		</data>
 		<key>Resources/flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -62,14 +66,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9WbMb8zGVzZcAZeszzp9b4D4Ugn/Zm/3dPTcvFJKqEI=
+			edOeGdh6Vay71ogU18V3dWmcqOvaGzRZvRWXyGflL28=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RBNvo1WzZ4oRRq0W9+hknpT7T8If536DEMBg9hyq/4o=
+			Ial2/F0FUztGEnbbC8Mj71HcczAqVOKMICgIVsEO4xo=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/FontManifest.json</key>
@@ -93,6 +97,13 @@
 			lUijHkoEgTXB2U+Rkyi/tirix7s8q5ZVfHlB2ql3dss=
 			</data>
 		</dict>
+		<key>Resources/flutter_assets/assets/raccoon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zitp90+DiG0DWu/IxzRrYuZaOrLYXUWEHjzfIB3JtuY=
+			</data>
+		</dict>
 		<key>Resources/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -111,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gIsz6YJRnijS1B6SQUVKpPEb3AnS6rykdEAQzrUZhck=
+			mYbtaFqF1hynPd64tPDYkoVdZkgBaT/3KrDU08aG+AY=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/shaders/ink_sparkle.frag</key>

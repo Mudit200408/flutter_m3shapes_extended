@@ -1,3 +1,7 @@
+## 1.0.0+2
+
+* Update README.MD adding image example
+
 ## 1.0.0
 
 * First release
