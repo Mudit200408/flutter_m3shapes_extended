@@ -52,7 +52,7 @@ Or using the general constructor
 
 ```dart
 M3Container(
-    <your selected shape>,
+    Shapes.<your_shape>, // Shapes.slanted
     clipBehavior: clipBehavior,
     height: height,
     width: width,
@@ -64,6 +64,7 @@ M3Container(
 You can use all the Shapes in this enum:
 
 * circle
+* clampShell
 * square
 * slanted
 * arch

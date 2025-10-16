@@ -15,6 +15,8 @@ import 'package:flutter_m3shapes/src/enums/shapes.dart';
 /// Use the factory constructors like [M3Container.gem] or [M3Container.slanted]
 /// for a more declarative and readable way to create a shaped container.
 ///
+/// Using [gradient] along with [color] will override the [color].
+///
 /// {@tool snippet}
 ///
 /// ```dart
@@ -22,6 +24,11 @@ import 'package:flutter_m3shapes/src/enums/shapes.dart';
 ///   color: Colors.blue,
 ///   width: 200,
 ///   height: 200,
+///   gradient: LinearGradient(
+///     colors: [Colors.blue, Colors.lightBlueAccent],
+///     begin: Alignment.topLeft,
+///     end: Alignment.bottomRight,
+///   ),
 ///   child: Center(
 ///     child: Text(
 ///       'Gem!',
@@ -40,16 +47,16 @@ class M3Container extends StatelessWidget {
   final double? width;
   final double? height;
   final Color? color;
+  final Gradient? gradient;
 
-  const M3Container(
-    this.shape, {
-    super.key,
-    required this.child,
-    this.clipBehavior,
-    this.width,
-    this.height,
-    this.color,
-  });
+  const M3Container(this.shape,
+      {super.key,
+      required this.child,
+      this.clipBehavior,
+      this.width,
+      this.height,
+      this.color,
+      this.gradient});
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +65,7 @@ class M3Container extends StatelessWidget {
         clipper: M3Clipper(shape),
         clipBehavior: clipBehavior ?? Clip.antiAlias,
         child: Container(
-          decoration: BoxDecoration(color: color),
+          decoration: BoxDecoration(color: color, gradient: gradient),
           width: width,
           height: height,
           child: child,
@@ -74,6 +81,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.circle,
@@ -81,6 +89,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -91,6 +100,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.square,
@@ -98,6 +108,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -108,6 +119,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.slanted,
@@ -115,6 +127,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -125,6 +138,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.arch,
@@ -132,6 +146,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -142,6 +157,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.semicircle,
@@ -149,6 +165,26 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
+        child: child,
+      );
+
+  /// Creates a container with a clampShell shape.
+  factory M3Container.clampShell({
+    required Widget child,
+    Clip? clipBehavior,
+    double? width,
+    double? height,
+    Color? color,
+    Gradient? gradient,
+  }) =>
+      M3Container(
+        Shapes.clampShell,
+        clipBehavior: clipBehavior,
+        height: height,
+        width: width,
+        color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -159,6 +195,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.oval,
@@ -166,6 +203,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -176,6 +214,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.pill,
@@ -183,6 +222,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -193,6 +233,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.triangle,
@@ -200,6 +241,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -210,6 +252,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.arrow,
@@ -217,6 +260,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -227,6 +271,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.fan,
@@ -234,6 +279,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -244,6 +290,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.diamond,
@@ -251,6 +298,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -261,6 +309,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.pentagon,
@@ -268,6 +317,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -278,6 +328,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.gem,
@@ -285,6 +336,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -295,6 +347,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.very_sunny,
@@ -302,6 +355,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -312,6 +366,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.sunny,
@@ -319,6 +374,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -329,6 +385,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.c4_sided_cookie,
@@ -336,6 +393,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -346,6 +404,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.c6_sided_cookie,
@@ -353,6 +412,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -363,6 +423,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.c7_sided_cookie,
@@ -370,6 +431,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -380,6 +442,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.c9_sided_cookie,
@@ -387,6 +450,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -397,6 +461,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.c12_sided_cookie,
@@ -404,6 +469,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -414,6 +480,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.l4_leaf_clover,
@@ -421,6 +488,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -431,6 +499,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.l8_leaf_clover,
@@ -438,6 +507,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -448,6 +518,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.burst,
@@ -455,6 +526,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -465,6 +537,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.soft_burst,
@@ -472,6 +545,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -482,6 +556,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.boom,
@@ -489,6 +564,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -499,6 +575,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.soft_boom,
@@ -506,6 +583,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -516,6 +594,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.flower,
@@ -523,6 +602,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -533,6 +613,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.puffy,
@@ -540,6 +621,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -550,6 +632,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.puffy_diamond,
@@ -557,6 +640,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -567,6 +651,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.ghostish,
@@ -574,6 +659,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -584,6 +670,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.pixel_circle,
@@ -591,6 +678,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -601,6 +689,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.pixel_triangle,
@@ -608,6 +697,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -618,6 +708,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.bun,
@@ -625,6 +716,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 
@@ -635,6 +727,7 @@ class M3Container extends StatelessWidget {
     double? width,
     double? height,
     Color? color,
+    Gradient? gradient,
   }) =>
       M3Container(
         Shapes.hearth,
@@ -642,6 +735,7 @@ class M3Container extends StatelessWidget {
         height: height,
         width: width,
         color: color,
+        gradient: gradient,
         child: child,
       );
 }
