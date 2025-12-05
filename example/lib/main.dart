@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_m3shapes_extended/flutter_m3shapes.dart';
+import 'package:flutter_m3shapes_extended/flutter_m3shapes_extended.dart';
 
 void main() {
   runApp(const MainApp());
