@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_m3shapes/src/enums/shapes.dart';
+import 'package:flutter_m3shapes_extended/src/enums/shapes.dart';
 import 'package:path_drawing/path_drawing.dart';
 import 'package:vector_math/vector_math_64.dart';
 

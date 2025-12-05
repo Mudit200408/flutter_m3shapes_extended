@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_m3shapes/flutter_m3shapes.dart';
+import 'package:flutter_m3shapes_extended/flutter_m3shapes.dart';
 
 void main() {
   runApp(const MainApp());
@@ -29,6 +29,17 @@ class MainApp extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
+                border: BorderSide(color: Colors.black, width: 2),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                    offset: Offset(0, 4),
+                    blurRadius: 4,
+                  ),
+                ],
+                padding: EdgeInsets.all(16),
+                margin: EdgeInsets.all(8),
+                clipBehavior: Clip.antiAlias,
 
                 child: const Center(child: Text("Circle")),
               ),
