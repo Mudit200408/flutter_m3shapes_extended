@@ -1,3 +1,10 @@
+## 1.1.0
+
+- Added support for Flutter 3.28.0
+- Added support for Dart 3.10.0
+- Added support for Flutter 3.28.0
+- Added support for Dart 3.10.0
+
 ## 1.0.0
 
 - Added `Shape.clampShell` with example in README.MD

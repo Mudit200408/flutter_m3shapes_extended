@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_m3shapes_extended/src/enums/shapes.dart';
+import 'package:flutter_m3shapes_extended/flutter_m3shapes_extended.dart';
 import 'package:path_drawing/path_drawing.dart';
 import 'package:vector_math/vector_math_64.dart';
 
@@ -13,12 +13,12 @@ Path _parseSvgPath(String svgPath) {
 /// This class takes a `shape` which contains an SVG path data string. It then
 /// parses this string into a Flutter [Path] object and scales it to fit the
 /// dimensions of the widget it is clipping.
-class M3Clipper extends CustomClipper<Path> {
+class M3EClipper extends CustomClipper<Path> {
   /// The shape definition containing the SVG path string.
   final Shapes shape;
 
-  /// Creates an instance of [M3Clipper] with a specific shape.
-  M3Clipper(this.shape);
+  /// Creates an instance of [M3EClipper] with a specific shape.
+  M3EClipper(this.shape);
 
   /// Returns the clipping path for the given [size].
   ///
@@ -66,11 +66,11 @@ class M3Clipper extends CustomClipper<Path> {
   /// Determines if the clipper should re-clip the widget.
   ///
   /// This method returns `false` as a performance optimization. Since the `shape`
-  /// is final and will not change for a given instance of [M3Clipper],
+  /// is final and will not change for a given instance of [M3EClipper],
   /// the clipping path does not need to be recalculated unless a new
-  /// [M3Clipper] instance is provided.
+  /// [M3EClipper] instance is provided.
   @override
-  bool shouldReclip(covariant M3Clipper oldClipper) {
+  bool shouldReclip(covariant M3EClipper oldClipper) {
     return false;
   }
 }

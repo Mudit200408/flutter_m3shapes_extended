@@ -26,6 +26,12 @@ Or you can use the shapes decorated as an image
 
 [![temp-Image-N6-HTyy.avif](https://i.postimg.cc/kXH86MMw/temp-Image-N6-HTyy.avif)](https://postimg.cc/nCvMNJDQ)
 
+## 🚨 Breaking Changes
+
+> **Warning**
+> - `M3Container` has been renamed to **`M3EContainer`**.
+> - A new widget **`M3EShape`** has been introduced that works identically to `M3EContainer` but does not require a `child` parameter.
+
 ## 🚨 Usage notes
 
 ### <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" height="14"/> Flutter channel
@@ -36,12 +42,21 @@ Or you can use the shapes decorated as an image
 
 `flutter_m3shapes_extended` is not platform dependent and should be compatible with all platform
 
+----
+## 📦 Installation
+
+```yaml
+dependencies:
+  flutter_m3shapes_extended: ^1.1.0
+```
+----
+
 ## 🚨 Example
 
-You can build and run the example app, but for be clear you can use all the shape using the `M3Container` constructors like this
+You can build and run the example app, but for be clear you can use all the shape using the `M3EContainer` constructors like this
 
 ```dart
-M3Container.circle(
+M3EContainer.circle(
     width: size,
     height: size,
     gradient: LinearGradient(
@@ -67,7 +82,7 @@ M3Container.circle(
 Or using the general constructor
 
 ```dart
-M3Container(
+M3EContainer(
     Shapes.<your_shape>, // Shapes.slanted
     clipBehavior: clipBehavior,
     height: height,
@@ -81,6 +96,24 @@ M3Container(
     margin: margin,
 );
 ```
+
+If you don't need a child parameter, you can use `M3EShape` directly:
+
+```dart
+M3EShape(
+    Shapes.<your_shape>, // Shapes.circle
+    width: size,
+    height: size,
+    color: color,
+    gradient: gradient,
+    border: border,
+    boxShadow: boxShadow,
+    padding: padding,
+    margin: margin,
+);
+```
+
+Or its constructors like `M3EShape.circle(...)`.
 
 You can use all the Shapes in this enum:
 
@@ -119,3 +152,16 @@ You can use all the Shapes in this enum:
 - pixel_triangle
 - bun
 - hearth
+
+---
+## 🐞 Found a bug? or ✨ You have a Feature Request?
+
+Feel free to open a [Issue](https://github.com/Mudit200408/flutter_m3shapes_extended/issues) or [Contribute](https://github.com/Mudit200408/flutter_m3shapes_extended/pulls) to the project.
+
+Hope You Love It!
+
+----
+## Credits
+- [flutter_m3shapes](https://pub.dev/packages/flutter_m3shapes) Base Package for M3 Shapes Extended
+
+### Radhe Radhe 🙏

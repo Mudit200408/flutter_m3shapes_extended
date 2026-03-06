@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
             mainAxisSpacing: 2,
             crossAxisSpacing: 2,
             children: [
-              M3Container.circle(
+              M3EContainer.circle(
                 width: size,
                 height: size,
                 gradient: LinearGradient(
@@ -43,7 +43,7 @@ class MainApp extends StatelessWidget {
 
                 child: const Center(child: Text("Circle")),
               ),
-              M3Container.clampShell(
+              M3EContainer.clampShell(
                 width: 180,
                 height: size,
                 gradient: LinearGradient(
@@ -53,13 +53,13 @@ class MainApp extends StatelessWidget {
                 ),
                 child: const Center(child: Text("Clamp Shell")),
               ),
-              M3Container.square(
+              M3EContainer.square(
                 color: Colors.red,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Square")),
               ),
-              M3Container.slanted(
+              M3EContainer.slanted(
                 color: Colors.green,
                 gradient: LinearGradient(
                   colors: [Colors.green, Colors.yellow],
@@ -70,193 +70,193 @@ class MainApp extends StatelessWidget {
                 height: size,
                 child: const Center(child: Text("Slanted")),
               ),
-              M3Container.arch(
+              M3EContainer.arch(
                 color: Colors.deepPurpleAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Arch")),
               ),
-              M3Container.semicircle(
+              M3EContainer.semicircle(
                 color: Colors.orange,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Semicircle")),
               ),
-              M3Container.oval(
+              M3EContainer.oval(
                 color: Colors.teal,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Oval")),
               ),
-              M3Container.pill(
+              M3EContainer.pill(
                 color: Colors.pink,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Pill")),
               ),
-              M3Container.triangle(
+              M3EContainer.triangle(
                 color: Colors.amber,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Triangle")),
               ),
-              M3Container.arrow(
+              M3EContainer.arrow(
                 color: Colors.cyan,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Arrow")),
               ),
-              M3Container.fan(
+              M3EContainer.fan(
                 color: Colors.lightGreen,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Fan")),
               ),
-              M3Container.diamond(
+              M3EContainer.diamond(
                 color: Colors.lightBlue,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Diamond")),
               ),
-              M3Container.pentagon(
+              M3EContainer.pentagon(
                 color: Colors.purple,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Pentagon")),
               ),
-              M3Container.gem(
+              M3EContainer.gem(
                 color: Colors.indigo,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Gem")),
               ),
-              M3Container.verySunny(
+              M3EContainer.verySunny(
                 color: Colors.yellow,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Very Sunny")),
               ),
-              M3Container.l4LeafClover(
+              M3EContainer.l4LeafClover(
                 color: Colors.pink,
                 width: size,
                 height: size,
                 child: const Center(child: Text("l4 Leaf Clover")),
               ),
-              M3Container.l8LeafClover(
+              M3EContainer.l8LeafClover(
                 color: Colors.pink,
                 width: size,
                 height: size,
                 child: const Center(child: Text("l8 Leaf Clover")),
               ),
-              M3Container.sunny(
+              M3EContainer.sunny(
                 color: Colors.yellowAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Sunny")),
               ),
-              M3Container.burst(
+              M3EContainer.burst(
                 color: Colors.redAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Burst")),
               ),
-              M3Container.softBurst(
+              M3EContainer.softBurst(
                 color: Colors.orangeAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Soft Burst")),
               ),
-              M3Container.boom(
+              M3EContainer.boom(
                 color: Colors.deepOrange,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Boom")),
               ),
-              M3Container.softBoom(
+              M3EContainer.softBoom(
                 color: Colors.deepOrangeAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Soft Boom")),
               ),
-              M3Container.flower(
+              M3EContainer.flower(
                 color: Colors.pinkAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Flower")),
               ),
-              M3Container.puffy(
+              M3EContainer.puffy(
                 color: Colors.blueGrey,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Puffy")),
               ),
-              M3Container.ghostish(
+              M3EContainer.ghostish(
                 color: Colors.grey,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Ghostish")),
               ),
-              M3Container.bun(
+              M3EContainer.bun(
                 color: Colors.brown.shade300,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Bun")),
               ),
-              M3Container.hearth(
+              M3EContainer.hearth(
                 color: Colors.red.shade700,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Hearth")),
               ),
-              M3Container.c4SidedCookie(
+              M3EContainer.c4SidedCookie(
                 color: Colors.brown,
                 width: size,
                 height: size,
                 child: const Center(child: Text("C4 Cookie")),
               ),
-              M3Container.c6SidedCookie(
+              M3EContainer.c6SidedCookie(
                 color: Colors.brown.shade400,
                 width: size,
                 height: size,
                 child: const Center(child: Text("C6 Cookie")),
               ),
-              M3Container.c7SidedCookie(
+              M3EContainer.c7SidedCookie(
                 color: Colors.brown.shade500,
                 width: size,
                 height: size,
                 child: const Center(child: Text("C7 Cookie")),
               ),
-              M3Container.c9SidedCookie(
+              M3EContainer.c9SidedCookie(
                 color: Colors.brown.shade600,
                 width: size,
                 height: size,
                 child: const Center(child: Text("C9 Cookie")),
               ),
-              M3Container.c12SidedCookie(
+              M3EContainer.c12SidedCookie(
                 color: Colors.brown.shade700,
                 width: size,
                 height: size,
                 child: const Center(child: Text("C12 Cookie")),
               ),
-              M3Container.l4LeafClover(
+              M3EContainer.l4LeafClover(
                 color: Colors.green.shade600,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Clover")),
               ),
-              M3Container.l8LeafClover(
+              M3EContainer.l8LeafClover(
                 color: Colors.green.shade800,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Clover")),
               ),
-              M3Container.puffyDiamond(
+              M3EContainer.puffyDiamond(
                 color: Colors.cyanAccent,
                 width: size,
                 height: size,
                 child: const Center(child: Text("Puffy Diamond")),
               ),
-              M3Container.pixelCircle(
+              M3EContainer.pixelCircle(
                 color: Colors.black,
                 width: size,
                 height: size,
@@ -267,7 +267,7 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
-              M3Container.pixelTriangle(
+              M3EContainer.pixelTriangle(
                 color: Colors.black,
                 width: size,
                 height: size,

@@ -4,8 +4,6 @@
 /// integer [value] and represented by an SVG path data [String]. This allows
 /// for easy reference and rendering of various shapes.
 ///
-/// Note: Many shapes have an empty string for their [svg] path, indicating
-/// they are placeholders to be defined later.
 enum Shapes {
   /// A circle shape.
   circle(
