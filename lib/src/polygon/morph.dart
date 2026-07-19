@@ -17,9 +17,7 @@ part of 'shapes.dart';
 /// splitting curves when the shapes do not have the same number of curves or
 /// when the curve placement within the shapes is very different.
 class Morph {
-  Morph(RoundedPolygon start, RoundedPolygon end)
-      : _start = start,
-        _end = end {
+  Morph(RoundedPolygon start, RoundedPolygon end) : _start = start, _end = end {
     _morphMatch = _match(start, end);
   }
 
@@ -207,7 +205,7 @@ class Morph {
   /// shape, and any value in between results in a shape which is a linear
   /// interpolation between those two shapes.
   ///
-  /// The range is generally [0..1] and values outside could result in
+  /// The range is generally `[0..1]` and values outside could result in
   /// undefined shapes, but values close to (but outside) the range can be used
   /// to get an exaggerated effect (e.g., for a bounce or overshoot animation).
   List<Cubic> asCubics(double progress) {
