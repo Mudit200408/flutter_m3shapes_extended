@@ -202,7 +202,7 @@ class MainApp extends StatelessWidget {
                 height: size,
                 child: const Center(child: Text("Bun")),
               ),
-              M3EContainer.hearth(
+              M3EContainer.heart(
                 color: Colors.red.shade700,
                 width: size,
                 height: size,
