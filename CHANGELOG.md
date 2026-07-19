@@ -1,3 +1,9 @@
+## 1.2.0
+
+- Added polygons support in shapes (including `RoundedPolygon` and shape morphing)
+- [Breaking Change] Updated shape enum naming in `Shapes` to follow camelCase (e.g., `verySunny`, `c4SidedCookie`, `l4LeafClover`, etc.)
+- [Breaking Change] Renamed `hearth` to `heart` in `Shapes` enum to fix typo
+
 ## 1.1.0
 
 - Added support for Flutter 3.28.0

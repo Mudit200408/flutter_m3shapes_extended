@@ -29,6 +29,8 @@ Or you can use the shapes decorated as an image
 ## 🚨 Breaking Changes
 
 > **Warning**
+> - **camelCase Compliance (v1.2.0)**: The shape enum names in `Shapes` have been updated to follow `camelCase` standard (e.g., `very_sunny` -> `verySunny`, `c4_sided_cookie` -> `c4SidedCookie`, `l4_leaf_clover` -> `l4LeafClover`, etc.).
+> - **Typo Fix (v1.2.0)**: The shape enum value `hearth` has been renamed to `heart`.
 > - `M3Container` has been renamed to **`M3EContainer`**.
 > - A new widget **`M3EShape`** has been introduced that works identically to `M3EContainer` but does not require a `child` parameter.
 
@@ -47,7 +49,7 @@ Or you can use the shapes decorated as an image
 
 ```yaml
 dependencies:
-  flutter_m3shapes_extended: ^1.1.0
+  flutter_m3shapes_extended: ^1.2.0
 ```
 ----
 
@@ -131,27 +133,27 @@ You can use all the Shapes in this enum:
 - diamond
 - pentagon
 - gem
-- very_sunny
+- verySunny
 - sunny
-- c4_sided_cookie
-- c6_sided_cookie
-- c7_sided_cookie
-- c9_sided_cookie
-- c12_sided_cookie
-- l4_leaf_clover
-- l8_leaf_clover
+- c4SidedCookie
+- c6SidedCookie
+- c7SidedCookie
+- c9SidedCookie
+- c12SidedCookie
+- l4LeafClover
+- l8LeafClover
 - burst
-- soft_burst
+- softBurst
 - boom
-- soft_boom
+- softBoom
 - flower
 - puffy
-- puffy_diamond
+- puffyDiamond
 - ghostish
-- pixel_circle
-- pixel_triangle
+- pixelCircle
+- pixelTriangle
 - bun
-- hearth
+- heart
 
 ---
 ## 🐞 Found a bug? or ✨ You have a Feature Request?
