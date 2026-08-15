@@ -1,3 +1,7 @@
+## 1.2.1
+
+- Added `childAlignment` parameter to `M3EContainer` for optical centering and custom alignment of children within shapes.
+
 ## 1.2.0
 
 - Added polygons support in shapes (including `RoundedPolygon` and shape morphing)

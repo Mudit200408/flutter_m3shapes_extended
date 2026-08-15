@@ -8,7 +8,7 @@ Bring a unique and modern feel to your app with a wide variety of predefined sha
 
 ### ✨ Features
 
-- **Extended Customization**: Now supports **shadows**, **borders**, **gradients**, and **margins** for all shapes.
+- **Extended Customization**: Now supports **shadows**, **borders**, **gradients**, **margins**, and **childAlignment** for all shapes.
 - **Complete Collection**: Includes the full suite of Material 3 expressive shapes like Gem, Slanted, Flower, and more.
 - **Highly Customizable**: Easily adjust the size, color, and child of any shape.
 - **Easy to Use**: A simple, declarative API lets you add expressive shapes in seconds.
@@ -49,7 +49,7 @@ Or you can use the shapes decorated as an image
 
 ```yaml
 dependencies:
-  flutter_m3shapes_extended: ^1.2.0
+  flutter_m3shapes_extended: ^1.2.1
 ```
 ----
 
@@ -96,6 +96,7 @@ M3EContainer(
     boxShadow: boxShadow,
     padding: padding,
     margin: margin,
+    childAlignment: childAlignment,
 );
 ```
 
