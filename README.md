@@ -47,9 +47,24 @@ Or you can use the shapes decorated as an image
 ----
 ## 📦 Installation
 
+> [!IMPORTANT]
+> **Flutter 3.47+ & `material_ui` Requirement (v2.0.0+)**:
+> Starting with `v2.0.0`, `flutter_m3shapes_extended` is migrated to use the standalone `material_ui` package decoupled in **Flutter 3.47.0**.
+> - Requires Flutter SDK **`>=3.47.0`**.
+> - Ensure your app imports `package:material_ui/material_ui.dart` (or run `dart fix --apply --code=migrate_design_widgets`).
+> - If you are on Flutter `< 3.47.0`, please use `flutter_m3shapes_extended: ^1.2.1`.
+
+Add `flutter_m3shapes_extended` and `material_ui` to your `pubspec.yaml`:
+
 ```yaml
 dependencies:
-  flutter_m3shapes_extended: ^1.2.1
+  material_ui: ^1.0.0
+  flutter_m3shapes_extended: ^2.0.0
+```
+
+```dart
+import 'package:material_ui/material_ui.dart';
+import 'package:flutter_m3shapes_extended/flutter_m3shapes_extended.dart';
 ```
 ----
 
